@@ -75,7 +75,7 @@ uint wl_msg_level = WL_ERROR_VAL;
 #define dtoh16(i) i
 #define htodchanspec(i) i
 #define dtohchanspec(i) i
-extern struct iw_statistics *dhd_get_wireless_stats(struct net_device *dev);
+//extern struct iw_statistics *dhd_get_wireless_stats(struct net_device *dev);
 extern int dhd_wait_pend8021x(struct net_device *dev);
 #if WIRELESS_EXT < 19
 #define IW_IOCTL_IDX(cmd)	((cmd) - SIOCIWFIRST)
@@ -2513,7 +2513,7 @@ const struct iw_handler_def wl_iw_handler_def =
 	.private = wl_iw_priv_handler,
 	.private_args = wl_iw_priv_args,
 #if WIRELESS_EXT >= 19
-	get_wireless_stats: dhd_get_wireless_stats,
+	//get_wireless_stats: dhd_get_wireless_stats,
 #endif /* WIRELESS_EXT >= 19 */
 	};
 #endif /* WIRELESS_EXT > 12 */

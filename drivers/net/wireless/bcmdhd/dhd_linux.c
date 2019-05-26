@@ -540,9 +540,11 @@ static void dhd_dump_htsfhisto(histo_t *his, char *s);
 int dhd_monitor_init(void *dhd_pub);
 int dhd_monitor_uninit(void);
 
+/*
 #if defined(WL_WIRELESS_EXT)
 struct iw_statistics *dhd_get_wireless_stats(struct net_device *dev);
-#endif /* defined(WL_WIRELESS_EXT) */
+#endif
+*/
 
 static void dhd_dpc(ulong data);
 /* forward decl */
